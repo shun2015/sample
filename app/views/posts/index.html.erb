@@ -1,0 +1,8 @@
+<% @posts.each do |post|%>
+  <p>名前</p>
+  <%= post.user.name %><br>
+  <p>タイトル</p>
+  <%= post.title %><br>
+  <p>内容</p>
+  <%= post.body %>
+<% end %>
