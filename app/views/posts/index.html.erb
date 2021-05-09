@@ -5,4 +5,6 @@
   <%= post.title %><br>
   <p>内容</p>
   <%= post.body %>
+  <p>画像</p>
+  <%= attachment_image_tag post, :image, :fill, 100, 100 %>
 <% end %>
