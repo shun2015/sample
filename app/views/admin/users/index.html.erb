@@ -1,4 +1,5 @@
 <% @users.each do |user|%>
   <%= user.name %>
+  <%= link_to "編集", edit_admin_user_path(user) %>
 <% end %>
 <h1>管理者</h1>

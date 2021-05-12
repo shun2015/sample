@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   # 論理削除用のルーティング
   patch '/users/:id/withdrawal' => 'users#withdrawal', as: 'withdrawal'
   namespace :admin do
-    resources :users, only:[:index]
+    resources :users, only:[:index, :edit, :update]
     resources :posts, only:[:index]
   end
 end
