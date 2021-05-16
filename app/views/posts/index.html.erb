@@ -1,6 +1,8 @@
 <% @posts.each do |post|%>
   <p>名前</p>
-  <%= post.user.name %><br>
+  <%= link_to post_path(post) do %>
+    <%= post.user.name %><br>
+  <% end %>
   <p>タイトル</p>
   <%= post.title %><br>
   <p>内容</p>
